@@ -64,7 +64,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
                 <div class="col-12">
                     <div class="row">
                         <div class="col-6">
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">yes!! Sure</button>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalCenter" onmousemove="myFunction2()">yes!! Sure</button>
                         </div>
                         <div class="col-6">
                             <button class="btn btn-primary"onmousemove="myFunction()" id="khush">Sochungiii</button>         
@@ -134,6 +134,39 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
                 $("#khush").css("margin", "0px");
             }
             khush++;
+            console.log(khush);
+        }
+
+
+
+
+        var khushi= 1;
+        function myFunction2()
+        {
+             
+             if(khushi%2==0)
+            {
+                $("#khush").css("margin", "120px");
+            }
+            else if(khushi%3==0)
+            {
+                $("#khush").css("margin", "210px");
+            }
+            
+            // else if(khush%5==0)
+            // {
+            //     $("#khush").css("display", "none");
+            //     alert("Byeeeeeeeee")
+            // }
+            else if(khushi%7==0)
+            {
+                $("#khush").css("margin", "40px");
+            }
+            else
+            {
+                $("#khush").css("margin", "0px");
+            }
+            khushi++;
             console.log(khush);
         }
     </script>
